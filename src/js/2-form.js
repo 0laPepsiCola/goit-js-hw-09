@@ -30,5 +30,8 @@ form.addEventListener('submit', event => {
 
   console.log('Submitted data:', formData);
   form.reset();
-  formData = { email: '', message: '' };
+    formData = { email: '', message: '' };
+    emailInput.value = '';
+    messageInput.value = '';
+    localStorage.removeItem(storageKey);
 });
